@@ -77,7 +77,7 @@
     movies.forEach(movie=>{
       const element = template.content.cloneNode(true);
       const img = element.querySelector('img');
-      img.src = movies.poster;
+      img.src = movie.poster;
       img.alt = movie.title;
 
       element.querySelector('h2').innerText = movie.title;
