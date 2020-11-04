@@ -1,8 +1,8 @@
 const movies = require('../data/movies.json');
 
-export.handler = async () =>{
-  return{
-    status: 200,
+exports.handler = async () => {
+  return {
+    statusCode: 200,
     body: JSON.stringify(movies)
   }
 }
