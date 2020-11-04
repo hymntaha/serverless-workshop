@@ -1,6 +1,6 @@
 const movies = require('../data/movies.json');
 
-exports.handler = async () => {
+exports.handler = async ({queryStringParameters}) => {
   const {id} = queryStringParameters;
   const movie = movies.find(m => m.id === id);
 
